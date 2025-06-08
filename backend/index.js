@@ -6,15 +6,15 @@ import path from "path";
 import cors from "cors";
 import cron from 'node-cron';
 import fs from 'fs';
-import userRoutes from './routes/userRoute.js';
-import adminRoutes from './routes/adminRoute.js';
-import authRoutes from './routes/authRoute.js';
-import songRoutes from './routes/songRoute.js';
-import albumRoutes from './routes/albumRoute.js';
-import statsRoutes from './routes/statsRoute.js';
+import userRoutes from './src/routes/userRoute.js';
+import adminRoutes from './src/routes/adminRoute.js';
+import authRoutes from './src/routes/authRoute.js';
+import songRoutes from './src/routes/songRoute.js';
+import albumRoutes from './src/routes/albumRoute.js';
+import statsRoutes from './src/routes/statsRoute.js';
 
-import { connectDB } from './lib/db.js';
-import { initializeSocket } from './lib/socket.js';
+import { connectDB } from './src/lib/db.js';
+import { initializeSocket } from './src/lib/socket.js';
 import { createServer } from 'http';
 import { fstat } from 'fs';
 
