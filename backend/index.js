@@ -74,7 +74,7 @@ app.use("/api/stats", statsRoutes);
 if (process.env.NODE_ENV === "production") {
   console.log("Serving frontend static files from:", path.join(__dirname, "../frontend/dist"));
   app.use(express.static(path.join(__dirname, "../frontend/dist")));
-  app.get("*", (req, res) => {
+  app.get("/*", (req, res) => {
     console.log("Catch-all route hit, sending index.html");
     res.sendFile(path.resolve(__dirname, "../frontend", "dist", "index.html"));
   });
