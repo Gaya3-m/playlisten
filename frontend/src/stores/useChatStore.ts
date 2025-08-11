@@ -22,7 +22,7 @@ interface ChatStore{
     setSelectedUser: (user: User | null) => void;
 }
 
-const baseURL = import.meta.env.MODE==="development" ? "https://playlisten-backend.onrender.com" : "/";
+const baseURL = import.meta.env.MODE==="development" ? "https://playit-zteg.onrender.com" : "/";
 
 const socket = io(baseURL, {
     autoConnect: false,
