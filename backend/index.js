@@ -30,7 +30,7 @@ const httpServer=createServer(app);
 initializeSocket(httpServer);
 
 app.use(cors({
-    origin: '*', // allow all origins, just for testing
+    origin: 'https://playlisten-me.vercel.app', // allow all origins, just for testing
     credentials: true,
 }));
 
