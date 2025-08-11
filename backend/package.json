@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "dev": "nodemon index.js",
+=======
+    "dev": "nodemon src/index.js",
+>>>>>>> b2ce4c189b0b4ced50c3efea5342a666e71545da
     "start": "node index.js",
     "seed:songs": "node src/seeds/songs.js",
     "seed:albums": "node src/seeds/albums.js"
