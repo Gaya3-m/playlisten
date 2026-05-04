@@ -4,7 +4,7 @@ import {Message } from "../models/messageModel.js"
 export const initializeSocket = (server) => {
     const io=new Server(server, {
         cors: {
-            origin: "https://playlisten-me.vercel.app",
+            origin: "http://localhost:3000",
             credentials: true,
         }
     })
